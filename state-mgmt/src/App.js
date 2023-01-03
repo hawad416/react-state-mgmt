@@ -7,6 +7,9 @@ function NameList(){
   const [list, setList] = useState(["hawa", "em", "zohar"]);
   const [name, setName] = useState("");
 
+  const [ex, setEx] = useState(() => "Hawa") //useState can take a function as a starting point so if you have some 
+// complex calculations you want to do in order to set an initial value, then you can do this 
+
   return(
     <div>
       <ul>
