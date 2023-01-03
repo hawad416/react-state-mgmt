@@ -26,6 +26,9 @@ import React from 'react';
        //also when you are creating an array or object since react compares
        // arrays and objects by reference so its important to stabalize those. 
 
+       // single level memoization, it is good performance, ccounter to popular belief 
+       // theres no huge cache from combinatorial stuff. 
+
         const total = useMemo(() => numbers.reduce((c,n) => c + n, 0), 
         [numbers]);
 
