@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import {useState} from "react";
 import React from 'react';
+import ReduceMgmt from './reduce-mgmt';
 
+// USE STATE LESSON
 
 function NameList(){
   const [list, setList] = useState(["hawa", "em", "zohar"]);
@@ -9,6 +11,7 @@ function NameList(){
 
   const [ex, setEx] = useState(() => "Hawa") //useState can take a function as a starting point so if you have some 
 // complex calculations you want to do in order to set an initial value, then you can do this 
+//this function is the useState is guaranteed to only ever run once when that function is created 
 
   return(
     <div>
@@ -67,7 +70,9 @@ function App() {
       <p>Hello!</p>
       <button onClick={addOne}>Count = {count}</button>
       <NameList></NameList>
-    </div>
+
+      <ReduceMgmt></ReduceMgmt>
+    </div> 
   );
 }
 
