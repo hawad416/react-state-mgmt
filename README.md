@@ -1,1 +1,1 @@
-testing stuff
+This repository will be used to get more familiar with react state management
