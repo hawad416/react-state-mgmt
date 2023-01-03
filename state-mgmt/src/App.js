@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import {useState} from "react";
 import React from 'react';
 import ReduceMgmt from './reduce-mgmt';
+import MonitorMgmt from './monitor-mgmt';
 
 // USE STATE LESSON
 
@@ -70,8 +71,8 @@ function App() {
       <p>Hello!</p>
       <button onClick={addOne}>Count = {count}</button>
       <NameList></NameList>
-
       <ReduceMgmt></ReduceMgmt>
+      <MonitorMgmt></MonitorMgmt>
     </div> 
   );
 }
